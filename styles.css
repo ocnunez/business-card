@@ -1,0 +1,75 @@
+body {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 100px;
+    border: 1px solid #8ecae6;
+}
+
+.avatar:hover {
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  50% {border: 5px solid #8ecae6;}
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #219ebc;
+    color: #2b2839;
+    border-bottom: 3px solid #fb8500;
+    border-right: 4px solid #fb8500;
+    border-radius: 15px;
+}
+
+.card:hover {
+    animation: move 3s ease-in;
+}
+
+@keyframes move {
+  40% {
+      border-bottom: 6px solid #fb8500;
+      border-right: 8px solid #fb8500;
+      }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    font-size: 19px;
+    border-bottom: 1px solid #fb8500;
+    padding-bottom: 5px;
+    animation: 5s easeIn;
+}
+
+@keyframes easeIn {
+    45% {
+        border-bottom: 4px solid #fb8500;
+    }
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.shadow-light {
+    color: #fff;
+    text-shadow: 2px 2px 4px #2b2839;
+}
+
+.shadow-dark {
+    color: #2b2839;
+    text-shadow: 3px 2px 12px #fff;
+}
